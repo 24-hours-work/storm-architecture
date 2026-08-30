@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="STORM ARCHITECTURE — Independent Design House">
 <meta name="twitter:description" content="An independent design house building objects, identities and systems across automotive, industrial design, packaging, beverage, fashion, technology and games.">
 <meta name="theme-color" content="#0a0a0a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial,sans-serif' font-weight='700' fill='%23f2f1ee' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='64' font-size='40' letter-spacing='2' font-family='Arial,sans-serif' font-weight='700' fill='%23f2f1ee' text-anchor='middle'%3ESA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -151,7 +151,7 @@
   /* ---------------- WORK / PROJECT CASES ---------------- */
   .work-intro{ max-width:640px; font-size:15px; color:var(--gray); line-height:1.8; font-weight:300; margin-bottom:100px; }
 
-  .case{ margin-bottom:170px; }
+  .case{ margin-bottom:170px; max-width:1320px; margin-left:auto; margin-right:auto; }
   .case:last-child{ margin-bottom:0; }
   .case-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin-bottom:60px; flex-wrap:wrap; }
   .case-title{ font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(48px,7vw,110px); line-height:0.92; text-transform:uppercase; }
@@ -162,8 +162,8 @@
 
   /* image frame with technical annotation — the signature element */
   .frame{ position:relative; border:1px solid var(--line); background:var(--graphite); }
-  .frame img{ width:100%; height:100%; object-fit:cover; display:block; }
-  .frame.contain img{ object-fit:contain; }
+  .frame img{ width:100%; height:100%; object-fit:cover; display:block; filter:brightness(1.16) contrast(1.08) saturate(1.03); }
+  .frame.contain img{ object-fit:contain; filter:brightness(1.04) contrast(1.02); }
   .frame .corner{ position:absolute; width:14px; height:14px; pointer-events:none; }
   .frame .corner.tl{ top:-1px; left:-1px; border-top:1px solid var(--gray); border-left:1px solid var(--gray); }
   .frame .corner.tr{ top:-1px; right:-1px; border-top:1px solid var(--gray); border-right:1px solid var(--gray); }
@@ -191,7 +191,7 @@
   .s01-grid-2 .frame{ aspect-ratio:16/10; }
 
   .s01-grid-3{ display:grid; grid-template-columns:1fr; background:var(--line); }
-  .s01-grid-3 .frame{ aspect-ratio:21/9; }
+  .s01-grid-3 .frame{ aspect-ratio:16/9; }
 
   .monza-layout{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:80px; align-items:center; }
   .monza-frame{ aspect-ratio:auto; max-width:380px; padding:36px; }
